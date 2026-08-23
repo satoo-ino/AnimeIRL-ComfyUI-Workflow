@@ -78,7 +78,7 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
    - `X`  moves left or right. `Y` moves up  down.
 6. **Set the denoise dials** in `LATENT MASK GUIDANCE`. Start at `CHARACTER = 1` / `BACKGROUND = 1` and pull `CHARACTER` down toward `0` if Flux keeps changing the face or the pose of the character.
 7. **Write the prompt** in the Flux node (see below).
-8. **Run Workflow.** Output lands in `output/` with the `SaveImage` prefix, and the `ImageCompare` node gives you a before/after slider against the raw composite.
+8. **Run Workflow.** Output lands in `output/` with the `Flux2-Klein-9b-base` prefix, and the `ImageCompare` node gives you a before/after slider against the raw composite.
 
 **The two dials that matter most:** `CHARACTER` and `BACKGROUND`. As the note in the graph says — *0 keeps the original, 1 lets Flux change it, leave both at 1 to give the AI full access.*
 
