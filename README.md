@@ -11,7 +11,11 @@ Inspired by the anime-into-real-life edits from [@auhuheben17](https://x.com/auh
 ---
 
 ## Example
-  
+
+<img src="drawing.jpg" width="500">
+<img src="photo.png" width="200">
+<img src="latent.png" width="200">
+<img src="output.png" width="200">
 | Image1 | Image2 | starting latent | Flux.2 Klein output |
 |---|---|---|---|
 | ![input](examples/drawing.jpg) | ![input](examples/photo.png) | ![input](examples/latent.png) | ![normal dithering](examples/output.png) |
