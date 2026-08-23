@@ -1,7 +1,5 @@
 # AnimeIRL-ComfyUI-Workflow
 
-> Drop a drawing into a photograph and let FLUX.2 Klein decide what the light does.
-
 A ComfyUI workflow that takes a drawing — it behaves best on anime art — cuts the character out with **SAM 3.1**, composites them into a real photograph, and uses **FLUX.2 Klein 9B** to relight and blend the two so the result reads as a photo of the character actually standing there.
 
 Inspired by the work of [@auhuheben17](https://x.com/auhuheben17).
