@@ -4,7 +4,7 @@ A ComfyUI workflow that takes a drawing — it behaves best on anime art — cut
 
 Inspired by the work of [@auhuheben17](https://x.com/auhuheben17).
 
-**Workflow file:** `simple_anime_composite_v8.json`
+**Workflow file:** `AnimeIRL-ComfyUI-Workflow.json`
 
 <sub>Name candidates, if *Reverse Isekai* isn't your taste: **Isekai Return**, **Cel to Camera**, **Photobomb**, **On Location**, **Live Action Pass**, **Ink → Lens**.</sub>
 
