@@ -12,7 +12,7 @@ Inspired by the anime-into-real-life edits from [@auhuheben17](https://x.com/auh
 
 ## Example
 
-| Image1 | Image2 | starting latent | Flux.2 Klein output |
+| Input1 | Input2 | starting latent | Flux.2 Klein output |
 |---|---|---|---|
 | ![input](examples/drawing.jpg) | ![input](examples/photo.png) | ![input](examples/latent.png) | ![normal dithering](examples/output.png) |
  >  Art by [蘇我](https://x.com/ool_x4)
