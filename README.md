@@ -62,7 +62,8 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
 ---
 
 ## How to use
-![input](examples/screenshot.png)
+|---|
+|![input](examples/screenshot.png)|
 
 1. **Load the workflow**, then re-select all four models from their dropdowns (the saved paths are local).
 2. **Load your images** in group 1 — photo in the *top* `LoadImage`, drawing in the *bottom* one.
