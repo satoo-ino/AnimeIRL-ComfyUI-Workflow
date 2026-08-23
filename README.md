@@ -14,7 +14,7 @@ Inspired by the work of [@auhuheben17](https://x.com/auhuheben17).
   
 | Image1 | Image2 | Flux.2 Klein output |
 |---|---|---|
-| ![input](images/drawing.png) | ![input](images/photo.png) | ![normal dithering](images/output.png) |
+| ![input](examples/drawing.png) | ![input](examples/photo.png) | ![normal dithering](examples/output.png) |
  >  Art by [蘇我](https://x.com/ool_x4)
 ---
 
