@@ -12,9 +12,9 @@ Inspired by the anime-into-real-life edits from [@auhuheben17](https://x.com/auh
 
 ## Example
   
-| Image1 | Image2 | Flux.2 Klein output |
-|---|---|---|
-| ![input](examples/drawing.jpg) | ![input](examples/photo.png) | ![normal dithering](examples/output.png) |
+| Image1 | Image2 | starting latent | Flux.2 Klein output |
+|---|---|---|---|
+| ![input](examples/drawing.jpg) | ![input](examples/photo.png) | ![input](examples/latent.png) | ![normal dithering](examples/output.png) |
  >  Art by [蘇我](https://x.com/ool_x4)
 ---
 
@@ -26,7 +26,7 @@ Inspired by the anime-into-real-life edits from [@auhuheben17](https://x.com/auh
 3. You change the character's zoom/position over the background using a preview, until it sits where you want it in the final shot.
 4. Both images go into **Flux.2 Klein 9B** as reference latents alongside a text prompt describing the final scene. The model composites, relights, and blends the character into the background in one pass.
 
-With this workflow the character doesn't have to be regenerated from scratch. SAM masks them out of the drawing, you position them by hand over the photo with three number widgets, and the two images are composited **before** anything is sampled. Flux receives that composite as its starting latent, plus both source images as references, and a per-region denoise map that says exactly how much it is allowed to touch the character versus the background.
+With this workflow the character doesn't have to be regenerated from scratch. SAM masks them out of the drawing, you position them by hand over the photo, and the two images are composited **before** anything is sampled. Flux receives that composite (`see image 3: 'starting latent'`) as its starting latent, plus both source images as references, and a per-region denoise map that says exactly how much it is allowed to touch the character versus the background.
 
 
 ---
