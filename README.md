@@ -8,6 +8,8 @@ Inspired by the work of [@auhuheben17](https://x.com/auhuheben17).
 
 **Workflow file:** `simple_anime_composite_v8.json`
 
+![input](examples/screenshot.png)
+
 ---
 
 ## Example
@@ -62,9 +64,6 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
 ---
 
 ## How to use
-
-
-|![input](examples/screenshot.png)|
 
 1. **Load the workflow**, then re-select all four models from their dropdowns (the saved paths are local).
 2. **Load your images** in group 1 — photo in the *top* `LoadImage`, drawing in the *bottom* one.
