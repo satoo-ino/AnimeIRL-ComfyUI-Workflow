@@ -13,8 +13,8 @@ Inspired by the work of [@auhuheben17](https://x.com/auhuheben17).
 ## Example
   
 | Image1 | Image2 | Flux.2 Klein output |
-|---|---|---|---|
-| ![input](images/input.png) | ![input](images/input.png) | ![normal dithering](images/normal.png) | ![sub-pixel dithering](images/subpixel.png) |
+|---|---|---|
+| ![input](images/input.png) | ![input](images/input.png) | ![normal dithering](images/normal.png) |
  >  Art by [蘇我](https://x.com/ool_x4)
 ---
 
