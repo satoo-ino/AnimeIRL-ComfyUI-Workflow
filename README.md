@@ -61,23 +61,8 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
 
 ---
 
-## Graph layout
-
-### Groups
-
-| Group | What it does |
-|---|---|
-| `1 - INPUT IMAGES` | Two `LoadImage` nodes. **Top = background photo, bottom = character drawing.** |
-| `2 - MATCH THE ASPECT RATIO` | One `ASPECT RATIO` / `WIDTH` / `HEIGHT` primitive drives **both** images, so the photo and the drawing can never drift out of sync. |
-| `3 - TYPE A MASK PROMPT` | The text prompt fed to SAM 3.1. |
-| `4 - MOVE IMAGE` | ZOOM / X / Y placement of the cut-out over the frame. |
-| `LATENT MASK GUIDENCE` | CHARACTER / BACKGROUND denoise-strength dials. |
-| `RUN FLUX` | Prompt, sampler, decode, save, before/after compare. |
-
-
----
-
 ## How to use
+![input](examples/screenshot.png)
 
 1. **Load the workflow**, then re-select all four models from their dropdowns (the saved paths are local).
 2. **Load your images** in group 1 — photo in the *top* `LoadImage`, drawing in the *bottom* one.
