@@ -62,7 +62,8 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
 ---
 
 ## How to use
-|---|
+
+
 |![input](examples/screenshot.png)|
 
 1. **Load the workflow**, then re-select all four models from their dropdowns (the saved paths are local).
