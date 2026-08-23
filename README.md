@@ -20,8 +20,13 @@ Inspired by the anime-into-real-life edits from [@auhuheben17](https://x.com/auh
 
 ## What it does
 
+ 
+1. You provide two images: a **character** drawing and a **background** photo/scene.
+2. The character is segmented with SAM‑3 using a short text prompt.
+3. You change the character's zoom/position over the background using a preview, until it sits where you want it in the final shot.
+4. Both images go into **Flux.2 Klein 9B** as reference latents alongside a text prompt describing the final scene. The model composites, relights, and blends the character into the background in one pass.
 
-The character is never regenerated from scratch. SAM masks them out of the drawing, you position them by hand over the photo with three number widgets, and the two images are composited **before** anything is sampled. Flux receives that composite as its starting latent, plus both source images as references, and a per-region denoise map that says exactly how much it is allowed to touch the character versus the background.
+With this workflow the character doesn't have to be regenerated from scratch. SAM masks them out of the drawing, you position them by hand over the photo with three number widgets, and the two images are composited **before** anything is sampled. Flux receives that composite as its starting latent, plus both source images as references, and a per-region denoise map that says exactly how much it is allowed to touch the character versus the background.
 
 
 ---
@@ -70,7 +75,7 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
 5. **Position the character.** Adjust `ZOOM`, `X`, `Y`, then manually refresh the preview node (click the node, hit the ▶ button on it) until the framing looks right.
    - Bigger `ZOOM` → character smaller in frame.
    - `X`  moves left or right. `Y` moves up  down.
-6. **Set the denoise dials** in `LATENT MASK GUIDENCE`. Start at `CHARACTER = 1` / `BACKGROUND = 1` and pull `CHARACTER` down toward `0` if Flux keeps changing the face or the pose of the character.
+6. **Set the denoise dials** in `LATENT MASK GUIDANCE`. Start at `CHARACTER = 1` / `BACKGROUND = 1` and pull `CHARACTER` down toward `0` if Flux keeps changing the face or the pose of the character.
 7. **Write the prompt** in the Flux node (see below).
 8. **Run Workflow.** Output lands in `output/` with the `SaveImage` prefix, and the `ImageCompare` node gives you a before/after slider against the raw composite.
 
