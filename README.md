@@ -89,7 +89,7 @@ Four packs. Everything else in the graph is ComfyUI core — including `ComfyMat
 
 ## Prompting
 
-"image1" is the character plate, "image2" is the photo. The shipped prompt is a good template:
+"image1" is the character image, "image2" is the photo. The shipped prompt is a good template:
 
 ```
 Change the background of the image 1, without making any changes to the subject.
