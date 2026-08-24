@@ -117,4 +117,4 @@ Lighting is what sells the composite. Frases like (`backlit by the sun`, `overca
 - [SAM 3.1](https://huggingface.co/facebook/sam3.1) — Meta.
 - Repackaged ComfyUI weights by [Comfy-Org](https://huggingface.co/Comfy-Org).
 
-Check the upstream repositories for the licence terms covering each model.
+
